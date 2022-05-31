@@ -92,8 +92,9 @@ select * from Projeto;
 #2)
 select nome,matgerente,datainicioger from Departamento;
 #3)
-select * from empregado where salario>1500 and 3000>salario;
+select * from Empregado where salario>1500 and 3000>salario;
 #4)
+select * from Projeto where situacao like '%ConcluÃ­da%' and coddepart = 5;
 select * from Projeto where situacao like '%Concluída%' and coddepart = 5;
 #5)
 select * from Empregado where funcao like '%Analista%' and coddepart = 1;

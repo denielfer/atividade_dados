@@ -5,7 +5,7 @@ Create Table Empregado(
   matricula INT AUTO_INCREMENT,
   nome varchar(255),
   rua varchar(255),
-  bairo varchar(255),
+  bairro varchar(255),
   datanasc date,
   dataadm date,
   funcao varchar(50),
