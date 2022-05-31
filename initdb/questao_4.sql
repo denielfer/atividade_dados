@@ -1,4 +1,3 @@
-
 use `db`;
 ALTER TABLE Projeto DROP FOREIGN KEY proj_coddep; 
 

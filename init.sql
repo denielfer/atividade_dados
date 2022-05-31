@@ -87,6 +87,8 @@ ALTER TABLE Dependente add constraint dep_sexo_check check(sexo in ('f','F','m',
 
 # 7)
 
+DROP TABLE Departamento RESTRICT;
+
 INSERT INTO Departamento (cod, nome, localizacao, matgerente, datainicioger) VALUES 
 (0,'dep financeiro','sede',null,null)
 (1,'dep engenharia','sede',null,null), --,0,'23/07/2018'),
