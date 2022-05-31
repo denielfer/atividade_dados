@@ -78,6 +78,9 @@ ALTER TABLE Projeto ADD CONSTRAINT proj_coddep FOREIGN KEY (coddepart) REFERENCE
 
 # 5 e 6) refazer para mysql
 
+ 
+ALTER TABLE Empregado add column sexo char(1) check (sexo in ("F","f","m","M"));
+
 ALTER TABLE Dependente MODIFY COLUMN sexo ENUM('F','M'); 
 
 ALTER TABLE Dependente add constraint dep_sexo_check check(sexo in ('f','F','m','M'));
