@@ -8,8 +8,8 @@ INSERT INTO Departamento (cod, nome, localizacao, matgerente, datainicioger) VAL
 
 INSERT INTO Empregado (matricula, nome, rua, bairro, telefone, datanasc, 
 dataadm, funcao, coddepart, matgerente, salario, comissao) VALUES 
-(1,'nelson','rua d','bairo 3','75943218765','1984/01/30','2018/07/23','gerente engenheiro',1,null,2134,213),
-(2,'roberto','rua a','bairo 1','75912345678','1981/05/15','2018/07/23','engenheiro de sistemas',1,1,3214,123),
+(1,'nelson','rua d','bairo 3','75943218765','1984/01/30','2018/07/23','gerente engenheiro',1,null,12134,213),
+(2,'roberto','rua a','bairo 1','75912345678','1981/05/15','2018/07/23','Analista de sistemas',1,1,13214,123),
 (3,'fenrir','rua b','bairo 2','75987654321','1982/02/26','2018/07/23','bonbeiro',2,null,4123,0),
 (4,'sotun','rua c','bairo 1','75912348765','1982/03/11','2018/07/23','analista',3,null,4231,0),
 (5,'astrite','rua a','bairo 1','75943215678','1983/04/05','2018/07/23','engenheiro de sistemas',1,1,1234,321);
@@ -26,7 +26,7 @@ INSERT INTO Dependente (mat, num, nome, sexo, datanasc, parentesco) VALUES
 (5,1,'astrite1','F','2017/07/23','mae');
 
 INSERT INTO Projeto (cod, nome, situacao, coddepart) VALUES 
-(1,'hecate','em desenvolvimento',1),
+(1,'Engenharia hecate','em desenvolvimento',1),
 (2,'mars','Concluída',2),
 (3,'robor','Concluída',5),
 (4,'argus','em desenvolvimento',4),

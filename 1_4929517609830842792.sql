@@ -94,7 +94,7 @@ select nome,matgerente,datainicioger from Departamento;
 #3)
 select * from Empregado where salario>1500 and 3000>salario;
 #4)
-select * from Projeto where situacao like '%ConcluÃ­da%' and coddepart = 5;
+select * from Projeto where situacao like '%ConcluÃ­da%' and coddepart = 5;s
 select * from Projeto where situacao like '%Concluída%' and coddepart = 5;
 #5)
 select * from Empregado where funcao like '%Analista%' and coddepart = 1;
@@ -102,10 +102,10 @@ select * from Empregado where funcao like '%Analista%' and coddepart = 1;
 select * from Projeto where nome like '%Engenharia%';
 #7)
 select nome,salario*1.1 from Empregado where coddepart=2;
-#8) #roda pra testa
+#8)
 select salario from Empregado group by salario;
 #9)
-select nome from Empregado where dataadm < '01/02/2022';
+select nome from Empregado where dataadm < '2022/02/01';
 #10)
 select nome from Departamento where cod in (select coddepart from Empregado where salario>10000) group by nome;
 #11)
