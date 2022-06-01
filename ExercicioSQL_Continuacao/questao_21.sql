@@ -1,0 +1,2 @@
+use `db`;
+select empregado.matricula, empregado.nome, empregado.salario + empregado.comissao as total from Empregado empregado, Empregado gerente where (empregado.matgerente = gerente.matricula) and (empregado.salario + empregado.comissao) > (gerente.salario + gerente.comissao);
