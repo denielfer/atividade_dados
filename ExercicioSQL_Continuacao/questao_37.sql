@@ -1,0 +1,2 @@
+use `db`;
+select Empregado.nome from Dependente, Empregado where Dependente.mat = Empregado.matricula and Dependente.parentesco in (select Dependente.parentesco from Dependente, Empregado where Dependente.mat = Empregado.matricula and Empregado.nome like 'Ana Maria') and Empregado.nome not in (select Empregado.nome from Dependente, Empregado where Dependente.mat = Empregado.matricula and Empregado.nome like 'nelson') group by Empregado.nome;
