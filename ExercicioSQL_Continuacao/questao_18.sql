@@ -1,0 +1,2 @@
+use `db`;
+select * from (select tep.nomeFunc as nomeFunc, tep.nomeProj as nomeProj, d.nome as nomeDep from (Select trabEmp.nome as nomeFunc, p.nome as nomeProj, p.coddepart as coddep from (select te.codproj, e.nome from TrabalhaEm te INNER JOIN Empregado e on te.mat = e.matricula ) as trabEmp JOIN Projeto p on p.cod = trabEmp.codproj) as tep INNER JOIN Departamento d on d.cod=tep.coddep) as tepd ORDER BY nomeDep,nomeFunc

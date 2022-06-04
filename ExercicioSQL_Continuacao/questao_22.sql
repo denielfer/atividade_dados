@@ -1,0 +1,2 @@
+use `db`;
+select tep.nome, tep.papel from (select tabEmp.nome, tabEmp.papel, tabEmp.coddep from (select e.nome as nome,te.papel as papel,te.codproj as codproj, e.coddepart as coddep from TrabalhaEm te join Empregado e on te.mat = e.matricula) as tabEmp JOIN Projeto p on p.cod=tabEmp.codproj where p.nome like "Sistema de Pagamento") as tep where tep.coddep = ( select d.cod from Departamento d where d.nome like "departamento Informática" )
